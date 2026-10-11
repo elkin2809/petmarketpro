@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetMarket Pro</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Sidebar para Escritorio -->
+        <aside id="sidebar" class="sidebar">
+            <div class="logo">
+                <i class="fas fa-paw"></i> PetMarket Pro
+            </div>
+            <nav>
+                <button data-route="home"><i class="fas fa-home"></i> Inicio</button>
+                <button data-route="catalog"><i class="fas fa-search"></i> Catálogo</button>
+                <button data-route="promos"><i class="fas fa-tags"></i> Promociones</button>
+                <button data-route="cart"><i class="fas fa-shopping-cart"></i> Carrito <span id="cartCount" class="badge">0</span></button>
+                <button data-route="account"><i class="fas fa-user"></i> Mi Cuenta</button>
+                <button data-route="contact"><i class="fas fa-headset"></i> Contacto</button>
+                <button data-route="help"><i class="fas fa-question-circle"></i> Ayuda</button>
+            </nav>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main id="app" tabindex="-1"></main>
+
+        <!-- Botón de Menú para Móvil -->
+        <button id="menuBtn" class="menu-btn"><i class="fas fa-bars"></i></button>
+        
+        <!-- Notificaciones Toast -->
+        <div id="toast" class="toast"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
